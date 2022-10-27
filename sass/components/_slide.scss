@@ -1,0 +1,60 @@
+.slide {
+  display: none;
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+  border: 14px solid $yellow-main;
+  border-radius: 292px;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+    position: relative;
+    animation: hero-slide;
+    animation-duration: 3s;
+    animation-timing-function: $animation-function;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+
+    &:hover {
+      animation-play-state: running;
+    }
+  }
+
+  &__card {
+    width: 292px;
+  }
+
+  &__img {
+    @extend %no-gap;
+  }
+}
+
+@keyframes hero-slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  40% {
+    left: -292px;
+  }
+  60% {
+    left: -292px;
+  }
+  80% {
+    left: -582px;
+  }
+  100% {
+    left: -582px;
+  }
+}

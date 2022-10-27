@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="shortcut icon" type="image/svg" href="./images/favicon.svg" />
+    <title>Food Studio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <a href="#" class="logo"
+            ><svg class="logo__icon">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="#">home</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">about</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">service</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">menu</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">contact</a>
+            </li>
+          </ul>
+          <button class="menu-open">
+            <svg class="menu-open__icon">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <button class="order" type="button">order now</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">enjoj your favorite food from anywhere</h1>
+          <p class="hero__txt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </p>
+          <button class="order" type="button">order now</button>
+          <!-- Slide -->
+          <div class="slide">
+            <ul class="slide__list">
+              <li class="slide__item">
+                <div class="slide__card">
+                  <img
+                    class="slide__img"
+                    width="292"
+                    height="292"
+                    srcset="
+                      ./images/dish-1-1x.webp 1x,
+                      ./images/dish-1-2x.webp 2x,
+                      ./images/dish-1-3x.webp 3x
+                    "
+                    src="images/dish-1-1x.webp.webp"
+                    alt="First dish"
+                    sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
+                  />
+                </div>
+              </li>
+              <li class="slide__item">
+                <div class="slide__card">
+                  <img
+                    class="slide__img"
+                    width="292"
+                    height="292"
+                    srcset="
+                      ./images/dish-2-1x.webp 1x,
+                      ./images/dish-2-2x.webp 2x,
+                      ./images/dish-2-3x.webp 3x
+                    "
+                    src="images/dish-2-1x.webp.webp"
+                    alt="Second dish"
+                    sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
+                  />
+                </div>
+              </li>
+              <li class="slide__item">
+                <div class="slide__card">
+                  <img
+                    class="slide__img"
+                    width="292"
+                    height="292"
+                    srcset="
+                      ./images/dish-3-1x.webp 1x,
+                      ./images/dish-3-2x.webp 2x,
+                      ./images/dish-3-3x.webp 3x
+                    "
+                    src="images/dish-3-1x.webp.webp"
+                    alt="First dish"
+                    sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <p>Якщо підключились, введіть, будь-ласка, у список свої імена:</p>
+    <ul>
+      <li>Anonym Wanted (basesnel)</li>
+      <li>Nataliya Yalovega (NatalisDom)</li>
+    </ul>
+  </body>
+</html>

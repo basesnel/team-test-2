@@ -1,0 +1,11 @@
+.logo {
+  @extend %link;
+  display: block;
+  padding: 10px 0;
+
+  &__icon {
+    @extend %no-gap;
+    width: 66px;
+    height: 52px;
+  }
+}

@@ -1,0 +1,18 @@
+.order {
+  @extend %btn;
+  background-color: $accent-color;
+
+  // @include border-radius(30px);
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 73px;
+  }
+
+  .page-header & {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: inherit;
+      margin: 0;
+    }
+  }
+}

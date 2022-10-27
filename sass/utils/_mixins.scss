@@ -1,0 +1,8 @@
+@mixin border-radius($radius) {
+  // Prefixes for:
+  -webkit-border-radius: $radius; // Chrome & Safari
+  -moz-border-radius: $radius; // Firefox
+  -ms-border-radius: $radius; // Internet Explorer
+  -o-border-radius: $radius; // Opera
+  border-radius: $radius; // Standart CSS
+}

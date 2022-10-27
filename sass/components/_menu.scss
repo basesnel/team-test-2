@@ -1,0 +1,31 @@
+.menu {
+  @extend %list;
+
+  &__link {
+    @extend %link;
+    display: block;
+    padding: 28px 0;
+    font-weight: 400;
+    color: $menu-txt-color;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: capitalize;
+    transition: color $animation-time $animation-function;
+
+    &--current,
+    &:hover {
+      font-weight: 500;
+      color: $accent-color;
+      text-decoration: underline;
+    }
+  }
+
+  .page-header & {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      gap: 28px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.page-header {
+  box-shadow: 0px 4px 24px $header-shadow;
+
+  &__wrapper {
+    @extend %container;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+}

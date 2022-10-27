@@ -1,0 +1,59 @@
+%container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 32px;
+  }
+}
+
+%title {
+  margin-bottom: 28px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17em;
+  text-transform: capitalize;
+}
+
+%txt {
+  margin-bottom: 28px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14em;
+}
+
+%list {
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+}
+
+%no-gap {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+%btn {
+  border: 0;
+  padding: 6px 18px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5em;
+  text-transform: capitalize;
+
+  color: $prim-txt-color;
+  border-radius: 30px;
+
+  cursor: pointer;
+}

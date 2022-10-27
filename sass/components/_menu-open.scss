@@ -1,0 +1,23 @@
+.menu-open {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-open__icon {
+  @extend %no-gap;
+  width: 28px;
+  height: 28px;
+  fill: $dark-green;
+  transition: fill $animation-time $animation-function;
+
+  .menu-open:hover &,
+  .menu-open:focus & {
+    fill: $yellow-main;
+  }
+}
