@@ -3,29 +3,33 @@
   position: absolute;
   right: 32px;
   bottom: 0;
-  border: 14px solid $yellow-main;
-  border-radius: 292px;
-  width: 320px;
-  height: 320px;
-  overflow: hidden;
 
   @media screen and (min-width: $tablet) {
     display: block;
+  }
+
+  &__wrap {
+    overflow: hidden;
+    border: 14px solid $yellow-main;
+    border-radius: 292px;
+    width: 320px;
+    height: 320px;
   }
 
   &__list {
     @extend %list;
     display: flex;
     position: relative;
+
     animation: hero-slide;
-    animation-duration: 3s;
+    animation-duration: 8s;
     animation-timing-function: $animation-function;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-play-state: paused;
+    animation-play-state: running;
 
     &:hover {
-      animation-play-state: running;
+      animation-play-state: paused;
     }
   }
 
@@ -36,22 +40,76 @@
   &__img {
     @extend %no-gap;
   }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 28px;
+    border: 0;
+    background: $white-bg-color;
+    box-shadow: $button-slide-shadow;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &--next {
+      left: 296px;
+    }
+  }
+
+  &__icon {
+    @extend %no-gap;
+    width: 11px;
+    height: 20px;
+    fill: $prim-txt-color;
+  }
 }
+
+.slide__button:hover ~ .slide__wrap > .slide__list {
+  animation-play-state: paused;
+}
+
+// @keyframes hero-slide {
+//   0% {
+//     left: 0;
+//   }
+//   20% {
+//     left: 0;
+//   }
+//   40% {
+//     left: -292px;
+//   }
+//   60% {
+//     left: -292px;
+//   }
+//   80% {
+//     left: -582px;
+//   }
+//   100% {
+//     left: -582px;
+//   }
+// }
 
 @keyframes hero-slide {
   0% {
     left: 0;
   }
-  20% {
+  27% {
     left: 0;
   }
-  40% {
+  37% {
     left: -292px;
   }
-  60% {
+  63% {
     left: -292px;
   }
-  80% {
+  73% {
     left: -582px;
   }
   100% {

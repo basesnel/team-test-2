@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="shortcut icon" type="image/svg" href="./images/favicon.svg" />
+    <script src="./js/animate.js"></script>
     <title>Food Studio</title>
   </head>
   <body>
@@ -59,69 +60,87 @@
           </p>
           <button class="order" type="button">order now</button>
           <!-- Slide -->
-          <div class="slide">
-            <ul class="slide__list">
-              <li class="slide__item">
-                <div class="slide__card">
-                  <img
-                    class="slide__img"
-                    width="292"
-                    height="292"
-                    srcset="
-                      ./images/dish-1-1x.webp 1x,
-                      ./images/dish-1-2x.webp 2x,
-                      ./images/dish-1-3x.webp 3x
-                    "
-                    src="images/dish-1-1x.webp.webp"
-                    alt="First dish"
-                    sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
-                  />
-                </div>
-              </li>
-              <li class="slide__item">
-                <div class="slide__card">
-                  <img
-                    class="slide__img"
-                    width="292"
-                    height="292"
-                    srcset="
-                      ./images/dish-2-1x.webp 1x,
-                      ./images/dish-2-2x.webp 2x,
-                      ./images/dish-2-3x.webp 3x
-                    "
-                    src="images/dish-2-1x.webp.webp"
-                    alt="Second dish"
-                    sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
-                  />
-                </div>
-              </li>
-              <li class="slide__item">
-                <div class="slide__card">
-                  <img
-                    class="slide__img"
-                    width="292"
-                    height="292"
-                    srcset="
-                      ./images/dish-3-1x.webp 1x,
-                      ./images/dish-3-2x.webp 2x,
-                      ./images/dish-3-3x.webp 3x
-                    "
-                    src="images/dish-3-1x.webp.webp"
-                    alt="First dish"
-                    sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
-                  />
-                </div>
-              </li>
-            </ul>
+          <div class="slide" name="carousel">
+            <button class="slide__button slide__button--prev">
+              <svg class="slide__icon">
+                <use href="./images/icons.svg#prev"></use>
+              </svg>
+            </button>
+            <button class="slide__button slide__button--next">
+              <svg class="slide__icon">
+                <use href="./images/icons.svg#next"></use>
+              </svg>
+            </button>
+            <div class="slide__wrap">
+              <ul class="slide__list">
+                <li class="slide__item">
+                  <div class="slide__card">
+                    <img
+                      class="slide__img"
+                      width="292"
+                      height="292"
+                      srcset="
+                        ./images/dish-1-1x.webp 1x,
+                        ./images/dish-1-2x.webp 2x,
+                        ./images/dish-1-3x.webp 3x
+                      "
+                      src="images/dish-1-1x.webp.webp"
+                      alt="First dish"
+                      sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
+                    />
+                  </div>
+                </li>
+                <li class="slide__item">
+                  <div class="slide__card">
+                    <img
+                      class="slide__img"
+                      width="292"
+                      height="292"
+                      srcset="
+                        ./images/dish-2-1x.webp 1x,
+                        ./images/dish-2-2x.webp 2x,
+                        ./images/dish-2-3x.webp 3x
+                      "
+                      src="images/dish-2-1x.webp.webp"
+                      alt="Second dish"
+                      sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
+                    />
+                  </div>
+                </li>
+                <li class="slide__item">
+                  <div class="slide__card">
+                    <img
+                      class="slide__img"
+                      width="292"
+                      height="292"
+                      srcset="
+                        ./images/dish-3-1x.webp 1x,
+                        ./images/dish-3-2x.webp 2x,
+                        ./images/dish-3-3x.webp 3x
+                      "
+                      src="images/dish-3-1x.webp.webp"
+                      alt="First dish"
+                      sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 292px"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
+      <!-- <section class="offerings">
+        <div class="offerings__wrapper">
+          <h1 class="offerings__title">what's special about our offerings</h1>
+          <p class="offerings__txt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </p>
+        </div>
+      </section> -->
     </main>
-
-    <p>Якщо підключились, введіть, будь-ласка, у список свої імена:</p>
-    <ul>
-      <li>Anonym Wanted (basesnel)</li>
-      <li>Nataliya Yalovega (NatalisDom)</li>
-    </ul>
+    <script src="../js/slide.js"></script>
   </body>
 </html>
